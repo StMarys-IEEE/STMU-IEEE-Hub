@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "role": "President",
+    "bio": "Computer Engineering student passionate about IoT and embedded systems. Leading the chapter with a focus on hands-on projects and community building.",
+    "avatar": "/avatars/john-smith.jpg",
+    "contributions": ["Arduino Workshop Lead", "Project Coordinator", "Event Organizer"],
+    "links": {
+      "github": "https://github.com/johnsmith",
+      "linkedin": "https://linkedin.com/in/johnsmith",
+      "email": "john.smith@stmu.edu"
+    },
+    "year": "Senior",
+    "major": "Computer Engineering"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "role": "Vice President",
+    "bio": "Electrical Engineering student with expertise in circuit design and power systems. Dedicated to fostering innovation and technical excellence.",
+    "avatar": "/avatars/sarah-johnson.jpg",
+    "contributions": ["Technical Workshops", "Mentorship Program", "Industry Liaison"],
+    "links": {
+      "github": "https://github.com/sarahjohnson",
+      "linkedin": "https://linkedin.com/in/sarahjohnson",
+      "email": "sarah.johnson@stmu.edu"
+    },
+    "year": "Senior",
+    "major": "Electrical Engineering"
+  },
+  {
+    "id": 3,
+    "name": "Michael Chen",
+    "role": "Treasurer",
+    "bio": "Software Engineering student specializing in web development and data science. Manages chapter finances and sponsorships.",
+    "avatar": "/avatars/michael-chen.jpg",
+    "contributions": ["Website Development", "Budget Management", "Sponsorship Coordinator"],
+    "links": {
+      "github": "https://github.com/michaelchen",
+      "linkedin": "https://linkedin.com/in/michaelchen",
+      "email": "michael.chen@stmu.edu"
+    },
+    "year": "Junior",
+    "major": "Software Engineering"
+  },
+  {
+    "id": 4,
+    "name": "Emily Rodriguez",
+    "role": "Secretary",
+    "bio": "Computer Science student with a passion for artificial intelligence and machine learning. Coordinates meetings and documentation.",
+    "avatar": "/avatars/emily-rodriguez.jpg",
+    "contributions": ["Meeting Coordination", "Documentation", "Social Media Management"],
+    "links": {
+      "github": "https://github.com/emilyrodriguez",
+      "linkedin": "https://linkedin.com/in/emilyrodriguez",
+      "email": "emily.rodriguez@stmu.edu"
+    },
+    "year": "Junior",
+    "major": "Computer Science"
+  },
+  {
+    "id": 5,
+    "name": "David Kim",
+    "role": "Technical Lead",
+    "bio": "Mechatronics Engineering student with experience in robotics and automation. Leads technical workshops and project development.",
+    "avatar": "/avatars/david-kim.jpg",
+    "contributions": ["Robotics Projects", "Technical Workshops", "Equipment Management"],
+    "links": {
+      "github": "https://github.com/davidkim",
+      "linkedin": "https://linkedin.com/in/davidkim",
+      "email": "david.kim@stmu.edu"
+    },
+    "year": "Senior",
+    "major": "Mechatronics Engineering"
+  }
+]
