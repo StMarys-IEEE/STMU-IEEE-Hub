@@ -1,0 +1,58 @@
+[
+  {
+    "id": "alumni-1",
+    "name": "Sarah Johnson",
+    "role": "Former President",
+    "email": "sarah.johnson@alumni.stmarys.edu",
+    "github": "https://github.com/sarahjohnson",
+    "linkedin": "https://linkedin.com/in/sarahjohnson",
+    "contributions": ["Chapter Leadership", "Mentorship", "Industry Connections"],
+    "bio": "Former IEEE President who led the chapter to new heights. Now working as a Software Engineer at Microsoft.",
+    "type": "alumni",
+    "graduationYear": "2023",
+    "currentPosition": "Software Engineer",
+    "company": "Microsoft"
+  },
+  {
+    "id": "alumni-2",
+    "name": "Michael Chen",
+    "role": "Former Vice President",
+    "email": "michael.chen@alumni.stmarys.edu",
+    "github": "https://github.com/michaelchen",
+    "linkedin": "https://linkedin.com/in/michaelchen",
+    "contributions": ["Project Management", "Technical Leadership", "Workshop Development"],
+    "bio": "Former VP who spearheaded multiple successful projects. Currently pursuing a PhD in Computer Science at Stanford.",
+    "type": "alumni",
+    "graduationYear": "2023",
+    "currentPosition": "PhD Student",
+    "company": "Stanford University"
+  },
+  {
+    "id": "alumni-3",
+    "name": "Emily Rodriguez",
+    "role": "Former Secretary",
+    "email": "emily.rodriguez@alumni.stmarys.edu",
+    "github": "https://github.com/emilyrodriguez",
+    "linkedin": "https://linkedin.com/in/emilyrodriguez",
+    "contributions": ["Documentation", "Event Organization", "Community Outreach"],
+    "bio": "Former Secretary who maintained excellent records and communication. Now working as a Product Manager at Google.",
+    "type": "alumni",
+    "graduationYear": "2022",
+    "currentPosition": "Product Manager",
+    "company": "Google"
+  },
+  {
+    "id": "alumni-4",
+    "name": "David Kim",
+    "role": "Former Treasurer",
+    "email": "david.kim@alumni.stmarys.edu",
+    "github": "https://github.com/davidkim",
+    "linkedin": "https://linkedin.com/in/davidkim",
+    "contributions": ["Financial Management", "Budget Planning", "Fundraising"],
+    "bio": "Former Treasurer who managed chapter finances with precision. Currently working as a Financial Analyst at Goldman Sachs.",
+    "type": "alumni",
+    "graduationYear": "2022",
+    "currentPosition": "Financial Analyst",
+    "company": "Goldman Sachs"
+  }
+]

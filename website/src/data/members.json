@@ -1,77 +1,112 @@
 [
   {
-    "id": 1,
-    "name": "John Smith",
+    "id": "1",
+    "name": "Ethan Rodriguez",
     "role": "President",
-    "bio": "Computer Engineering student passionate about IoT and embedded systems. Leading the chapter with a focus on hands-on projects and community building.",
-    "avatar": "/avatars/john-smith.jpg",
-    "contributions": ["Arduino Workshop Lead", "Project Coordinator", "Event Organizer"],
-    "links": {
-      "github": "https://github.com/johnsmith",
-      "linkedin": "https://linkedin.com/in/johnsmith",
-      "email": "john.smith@stmu.edu"
-    },
-    "year": "Senior",
-    "major": "Computer Engineering"
+    "email": "ethan.rodriguez@stmarys.edu",
+    "github": "https://github.com/ethanrodriguez",
+    "instagram": "https://www.instagram.com/ethanrodriguez_ieee/",
+    "avatar": "/images/members/ethan-rodriguez.jpg",
+    "contributions": ["Leadership", "Event Organization", "Guitar Performance"],
+    "bio": "Leading the IEEE chapter with passion for technology and music. Computer Science major focused on software development and team building.",
+    "funFacts": [
+      "🎸 Plays electric guitar and has performed at campus events",
+      "☕ Can't start coding without a cup of coffee",
+      "🎮 Built his first video game at age 12",
+      "🌮 Favorite study snack: tacos from the campus food truck"
+    ],
+    "type": "current"
   },
   {
-    "id": 2,
-    "name": "Sarah Johnson",
-    "role": "Vice President",
-    "bio": "Electrical Engineering student with expertise in circuit design and power systems. Dedicated to fostering innovation and technical excellence.",
-    "avatar": "/avatars/sarah-johnson.jpg",
-    "contributions": ["Technical Workshops", "Mentorship Program", "Industry Liaison"],
-    "links": {
-      "github": "https://github.com/sarahjohnson",
-      "linkedin": "https://linkedin.com/in/sarahjohnson",
-      "email": "sarah.johnson@stmu.edu"
-    },
-    "year": "Senior",
-    "major": "Electrical Engineering"
+    "id": "2",
+    "name": "Donovan Acosta",
+    "role": "Risk Management Officer",
+    "email": "donovan.acosta@stmarys.edu",
+    "github": "https://github.com/donovanacosta",
+    "instagram": "https://www.instagram.com/donovanacosta_ieee/",
+    "avatar": "/images/members/donovan-acosta.jpg",
+    "contributions": ["Risk Assessment", "Safety Protocols", "Event Planning"],
+    "bio": "Ensuring the safety and security of all IEEE activities and events. Engineering student with expertise in risk management and project coordination.",
+    "funFacts": [
+      "🛡️ Always has a backup plan for everything",
+      "📚 Reads 3 engineering books per month",
+      "🏃‍♂️ Runs 5 miles every morning before class",
+      "🎯 Can solve a Rubik's cube in under 2 minutes"
+    ],
+    "type": "current"
   },
   {
-    "id": 3,
-    "name": "Michael Chen",
-    "role": "Treasurer",
-    "bio": "Software Engineering student specializing in web development and data science. Manages chapter finances and sponsorships.",
-    "avatar": "/avatars/michael-chen.jpg",
-    "contributions": ["Website Development", "Budget Management", "Sponsorship Coordinator"],
-    "links": {
-      "github": "https://github.com/michaelchen",
-      "linkedin": "https://linkedin.com/in/michaelchen",
-      "email": "michael.chen@stmu.edu"
-    },
-    "year": "Junior",
-    "major": "Software Engineering"
-  },
-  {
-    "id": 4,
-    "name": "Emily Rodriguez",
+    "id": "3",
+    "name": "Marvin Masabo Nkaka",
     "role": "Secretary",
-    "bio": "Computer Science student with a passion for artificial intelligence and machine learning. Coordinates meetings and documentation.",
-    "avatar": "/avatars/emily-rodriguez.jpg",
-    "contributions": ["Meeting Coordination", "Documentation", "Social Media Management"],
-    "links": {
-      "github": "https://github.com/emilyrodriguez",
-      "linkedin": "https://linkedin.com/in/emilyrodriguez",
-      "email": "emily.rodriguez@stmu.edu"
-    },
-    "year": "Junior",
-    "major": "Computer Science"
+    "email": "marvin.nkaka@stmarys.edu",
+    "github": "https://github.com/marvinmasabo",
+    "instagram": "https://www.instagram.com/marvinmasabo_ieee/",
+    "avatar": "/images/members/marvin-masabo-nkaka.jpg",
+    "contributions": ["Documentation", "Meeting Records", "Communication"],
+    "bio": "Keeping detailed records of all IEEE activities and maintaining clear communication channels. Computer Science student with strong organizational skills.",
+    "funFacts": [
+      "📝 Takes notes in 3 different languages",
+      "🌍 Speaks 4 languages fluently",
+      "🎨 Creates digital art in his spare time",
+      "☕ Drinks more coffee than the entire engineering department"
+    ],
+    "type": "current"
   },
   {
-    "id": 5,
-    "name": "David Kim",
-    "role": "Technical Lead",
-    "bio": "Mechatronics Engineering student with experience in robotics and automation. Leads technical workshops and project development.",
-    "avatar": "/avatars/david-kim.jpg",
-    "contributions": ["Robotics Projects", "Technical Workshops", "Equipment Management"],
-    "links": {
-      "github": "https://github.com/davidkim",
-      "linkedin": "https://linkedin.com/in/davidkim",
-      "email": "david.kim@stmu.edu"
-    },
-    "year": "Senior",
-    "major": "Mechatronics Engineering"
+    "id": "4",
+    "name": "Nick Galus",
+    "role": "Treasurer",
+    "email": "nick.galus@stmarys.edu",
+    "github": "https://github.com/nickgalus",
+    "instagram": "https://www.instagram.com/nickgalus_ieee/",
+    "avatar": "/images/members/nick-galus.jpg",
+    "contributions": ["Financial Management", "Budget Planning", "Fundraising"],
+    "bio": "Managing the financial aspects of the IEEE chapter with precision and care. Engineering student with expertise in financial planning and resource allocation.",
+    "funFacts": [
+      "💰 Can calculate complex budgets in his head",
+      "🎯 Never misses a deadline (seriously, never)",
+      "🏆 Won the campus math competition 3 years in a row",
+      "🍕 Organizes the best pizza parties for IEEE events"
+    ],
+    "type": "current"
+  },
+  {
+    "id": "5",
+    "name": "Veltman Jr Okey-Ejiowhor",
+    "role": "Robotics Co-Chair",
+    "email": "veltman.okey@stmarys.edu",
+    "github": "https://github.com/veltmanjr",
+    "instagram": "https://www.instagram.com/veltmanjr_ieee/",
+    "avatar": "/images/members/veltman-okey-ejiowhor.jpg",
+    "contributions": ["Robotics Projects", "Technical Leadership", "Workshop Development"],
+    "bio": "Leading robotics initiatives and technical projects for the IEEE chapter. Engineering student passionate about automation and robotics technology.",
+    "funFacts": [
+      "🤖 Built his first robot at age 10",
+      "⚡ Can fix any electronic device",
+      "🎮 Dreams of creating the next generation of gaming robots",
+      "🌙 Codes until 3 AM when working on exciting projects"
+    ],
+    "type": "current"
+  },
+  {
+    "id": "6",
+    "name": "Wenbin Luo",
+    "role": "Campus Advisor",
+    "email": "wenbin.luo@stmarys.edu",
+    "github": "https://github.com/wenbinluo",
+    "instagram": "https://www.instagram.com/wenbinluo_ieee/",
+    "avatar": "/images/members/wenbin-luo.jpg",
+    "contributions": ["Faculty Guidance", "Academic Support", "Industry Connections"],
+    "bio": "Providing academic guidance and industry connections for IEEE members. Faculty member with extensive experience in engineering education and research.",
+    "funFacts": [
+      "🎓 Has published over 50 research papers",
+      "🌱 Grows his own vegetables in his office",
+      "📚 Has a personal library of 1000+ engineering books",
+      "☕ Makes the best coffee in the engineering building"
+    ],
+    "type": "current"
   }
 ]
+
+

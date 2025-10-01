@@ -1,132 +1,72 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Smart Campus IoT Network",
-    "description": "A comprehensive IoT network monitoring system for campus utilities including lighting, HVAC, and security systems. Features real-time monitoring, predictive maintenance, and energy optimization.",
-    "image": "/projects/iot-campus.jpg",
+    "description": "A comprehensive IoT network monitoring environmental conditions, energy usage, and security across campus buildings.",
     "technologies": ["Arduino", "Raspberry Pi", "Python", "MQTT", "React", "Node.js"],
-    "status": "In Progress",
-    "contributors": [
-      {
-        "name": "John Smith",
-        "role": "Lead Developer",
-        "github": "https://github.com/johnsmith"
-      },
-      {
-        "name": "Sarah Johnson",
-        "role": "Hardware Engineer",
-        "github": "https://github.com/sarahjohnson"
-      },
-      {
-        "name": "Michael Chen",
-        "role": "Backend Developer",
-        "github": "https://github.com/michaelchen"
-      }
-    ],
-    "repository": "https://github.com/ieee-stmu/smart-campus-iot",
-    "demo": "https://demo.stmu-ieee.org/iot-campus",
-    "category": "IoT & Embedded Systems",
-    "startDate": "2024-09-01",
-    "lastUpdated": "2024-12-15"
+    "githubUrl": "https://github.com/StMarys-IEEE/smart-campus-iot",
+    "liveUrl": "https://smart-campus.stmu.edu",
+    "contributors": ["Alex Chen", "Maria Rodriguez", "James Wilson"],
+    "status": "active",
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Arduino Workshop Series",
-    "description": "Comprehensive workshop materials for teaching Arduino programming and electronics to beginners. Includes lesson plans, code examples, and hands-on projects.",
-    "image": "/projects/arduino-workshop.jpg",
-    "technologies": ["Arduino", "C++", "Electronics", "Teaching Materials"],
-    "status": "Completed",
-    "contributors": [
-      {
-        "name": "David Kim",
-        "role": "Workshop Lead",
-        "github": "https://github.com/davidkim"
-      },
-      {
-        "name": "Emily Rodriguez",
-        "role": "Content Creator",
-        "github": "https://github.com/emilyrodriguez"
-      }
-    ],
-    "repository": "https://github.com/ieee-stmu/arduino-workshop",
-    "demo": null,
-    "category": "Education & Outreach",
-    "startDate": "2024-08-01",
-    "lastUpdated": "2024-11-30"
+    "description": "Interactive workshops teaching Arduino programming and electronics to beginners and intermediate students.",
+    "technologies": ["Arduino", "C++", "Electronics", "Sensors"],
+    "githubUrl": "https://github.com/StMarys-IEEE/arduino-workshops",
+    "contributors": ["James Wilson", "David Kim", "Emily Watson"],
+    "status": "active",
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "IEEE Hub Website",
-    "description": "Modern, responsive website for the IEEE St. Mary's University student chapter. Built with Next.js, TypeScript, and Tailwind CSS with dark mode support.",
-    "image": "/projects/ieee-website.jpg",
-    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "React", "Vercel"],
-    "status": "In Progress",
-    "contributors": [
-      {
-        "name": "Michael Chen",
-        "role": "Frontend Developer",
-        "github": "https://github.com/michaelchen"
-      },
-      {
-        "name": "Emily Rodriguez",
-        "role": "UI/UX Designer",
-        "github": "https://github.com/emilyrodriguez"
-      }
-    ],
-    "repository": "https://github.com/ieee-stmu/ieee-hub-website",
-    "demo": "https://stmu-ieee.org",
-    "category": "Web Development",
-    "startDate": "2024-12-01",
-    "lastUpdated": "2024-12-15"
+    "description": "Modern, responsive website showcasing our chapter's activities, members, and projects with dark/light theme support.",
+    "technologies": ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    "githubUrl": "https://github.com/StMarys-IEEE/ieee-hub-website",
+    "liveUrl": "https://ieee-stmu.github.io/STMU-IEEE-Hub/",
+    "contributors": ["Alex Chen", "Emily Watson"],
+    "status": "active",
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
   },
   {
-    "id": 4,
-    "title": "Robotics Competition Platform",
-    "description": "Autonomous robot platform designed for IEEE robotics competitions. Features advanced sensors, computer vision, and machine learning capabilities.",
-    "image": "/projects/robotics-platform.jpg",
-    "technologies": ["Python", "OpenCV", "TensorFlow", "ROS", "Arduino", "Raspberry Pi"],
-    "status": "Planning",
-    "contributors": [
-      {
-        "name": "David Kim",
-        "role": "Project Lead",
-        "github": "https://github.com/davidkim"
-      },
-      {
-        "name": "John Smith",
-        "role": "Software Engineer",
-        "github": "https://github.com/johnsmith"
-      }
-    ],
-    "repository": "https://github.com/ieee-stmu/robotics-platform",
-    "demo": null,
-    "category": "Robotics & AI",
-    "startDate": "2025-01-15",
-    "lastUpdated": "2024-12-10"
+    "id": "4",
+    "title": "Renewable Energy Monitoring System",
+    "description": "Real-time monitoring system for solar panels and wind turbines with data visualization and alerting.",
+    "technologies": ["Python", "Flask", "SQLite", "Chart.js", "Arduino"],
+    "githubUrl": "https://github.com/StMarys-IEEE/renewable-energy-monitor",
+    "contributors": ["Maria Rodriguez", "James Wilson"],
+    "status": "completed",
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=300&fit=crop"
   },
   {
-    "id": 5,
-    "title": "Energy Monitoring Dashboard",
-    "description": "Real-time energy consumption monitoring system for campus buildings. Provides analytics, reporting, and optimization recommendations.",
-    "image": "/projects/energy-dashboard.jpg",
-    "technologies": ["Python", "Django", "PostgreSQL", "Chart.js", "Docker"],
-    "status": "Completed",
-    "contributors": [
-      {
-        "name": "Sarah Johnson",
-        "role": "Backend Developer",
-        "github": "https://github.com/sarahjohnson"
-      },
-      {
-        "name": "Michael Chen",
-        "role": "Frontend Developer",
-        "github": "https://github.com/michaelchen"
-      }
-    ],
-    "repository": "https://github.com/ieee-stmu/energy-dashboard",
-    "demo": "https://energy.stmu-ieee.org",
-    "category": "Data Analytics",
-    "startDate": "2024-06-01",
-    "lastUpdated": "2024-10-15"
+    "id": "5",
+    "title": "Mobile App for Campus Events",
+    "description": "Cross-platform mobile application for managing and discovering campus events and IEEE activities.",
+    "technologies": ["React Native", "Firebase", "JavaScript", "Redux"],
+    "githubUrl": "https://github.com/StMarys-IEEE/campus-events-app",
+    "contributors": ["David Kim", "Emily Watson"],
+    "status": "active",
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop"
+  },
+  {
+    "id": "6",
+    "title": "Robotics Competition Team",
+    "description": "Autonomous robot design and programming for regional IEEE robotics competitions.",
+    "technologies": ["Arduino", "C++", "Computer Vision", "Mechanical Design"],
+    "githubUrl": "https://github.com/StMarys-IEEE/robotics-competition",
+    "contributors": ["Alex Chen", "James Wilson", "Maria Rodriguez"],
+    "status": "active",
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop"
   }
 ]
+
+
