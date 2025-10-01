@@ -7,34 +7,34 @@ It serves as the one-stop home for our workshops, documentation, website, projec
 
 ## 📂 Repository Structure  
 
-ieee-stmu-hub/
-│
-├── site/            # Website hosted with GitHub Pages
-├── docs/            # Documentation (setup guides, tutorials, wiki-style pages)
-├── workshops/       # Starter and complete code from hands-on workshops
-├── students/        # Officer bios, student spotlights, member contributions
-├── projects/        # Chapter projects (with links to dedicated repos if large)
-├── README.md        # This file
-├── LICENSE          # MIT License (chapter content)
-└── CONTRIBUTING.md  # How members can contribute
+ieee-stmu-hub/  
+│  
+├── site/            # Website hosted with GitHub Pages  
+├── docs/            # Documentation (setup guides, tutorials, wiki-style pages)  
+├── workshops/       # Starter and complete code from hands-on workshops  
+├── students/        # Officer bios, student spotlights, member contributions  
+├── projects/        # Chapter projects (with links to dedicated repos if large)  
+├── README.md        # This file  
+├── LICENSE          # MIT License (chapter content)  
+└── CONTRIBUTING.md  # How members can contribute  
 
 ---
 
 ## 🔹 What’s Inside  
 
-- **Workshops** → Arduino, Git, and other hands-on coding projects (starter + complete).  
-- **Docs** → Setup guides (VS Code, Arduino IDE, Git), hardware basics, and workshop references.  
-- **Website** → Public-facing chapter site, hosted from `/site`.  
-- **Projects** → Chapter projects, with links to dedicated repos if they grow large.  
-- **Students** → Officer highlights and member spotlights.  
+- **[Workshops](./workshops/)** → Arduino, Git, and other hands-on coding projects (starter + complete).  
+- **[Docs](./docs/)** → Setup guides (VS Code, Arduino IDE, Git), hardware basics, and workshop references.  
+- **[Website](./site/)** → Public-facing chapter site, hosted from `/site`.  
+- **[Projects](./projects/)** → Chapter projects, with links to dedicated repos if they grow large.  
+- **[Students](./students/)** → Officer highlights and member spotlights.  
 
-👉 Full details are documented in our [Wiki](../../wiki).  
+📖 Full details are documented in our [Wiki](../../wiki).  
 
 ---
 
 ## 🔹 Contributing  
 
-Members can contribute by creating a new branch and submitting a Pull Request.  
+Members contribute by creating a new branch and submitting a Pull Request.  
 Branch protection ensures all changes are reviewed before merging.  
 
 📖 See the [Contribution Guide](../../wiki/Contribution-Guide) in the Wiki for full workflow steps.  
@@ -55,7 +55,7 @@ Branch protection ensures all changes are reviewed before merging.
 Some projects live outside this hub but are linked here:  
 - **Drone Competition Build** → `ieee-stmu-drone2026`  
 - **Hackathon 2025 Submission** → `ieee-stmu-hackathon-2025`  
-- **Student Projects** → listed in `/students/spotlight.md`  
+- **Student Projects** → listed in [`/students/spotlight.md`](./students/spotlight.md)  
 
 ---
 
