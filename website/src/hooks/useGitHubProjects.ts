@@ -1,6 +1,19 @@
+/**
+ * useGitHubProjects Hook
+ * 
+ * Custom React hook for fetching and managing GitHub repository data.
+ * Features:
+ * - Automatic data fetching from GitHub API
+ * - Loading and error state management
+ * - Fallback to static JSON data if API fails
+ * - Data transformation for UI consumption
+ * - Rate limiting awareness
+ */
+
 import { useState, useEffect } from 'react';
 import { Project } from '../types';
 
+// GitHub repository interface for API responses
 interface GitHubRepo {
   id: number;
   name: string;

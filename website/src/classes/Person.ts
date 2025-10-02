@@ -1,4 +1,14 @@
-// Person class for IEEE members
+/**
+ * Person Class - Object-Oriented Member Management
+ * 
+ * Encapsulates member data and behavior using OOP principles.
+ * Features:
+ * - Automatic alumni detection based on graduation dates
+ * - Contact information management
+ * - Flexible data validation and transformation
+ * - JSON serialization/deserialization
+ * - Chainable setter methods for fluent API
+ */
 export class Person {
   private id: string;
   private name: string;

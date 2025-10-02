@@ -1,32 +1,62 @@
+/**
+ * Members Page Component
+ * 
+ * Displays IEEE chapter members with filtering, expandable details, and contact information.
+ * Features:
+ * - Object-oriented member management using Person class
+ * - Automatic alumni detection based on graduation dates
+ * - Expandable member cards with detailed information
+ * - Contact information and social links
+ * - Responsive design with fallback avatars
+ */
+
 import React, { useState } from 'react';
 import { useMembers } from '../hooks/useMembers';
 import { Person } from '../classes/Person';
 
 const Members: React.FC = () => {
-  const { 
-    currentMembers, 
-    alumniMembers, 
-    loading, 
-    error, 
-    getFilteredMembers, 
-    getMemberStats 
+  // Hook for member data management with OOP approach
+  const {
+    currentMembers,
+    alumniMembers,
+    loading,
+    error,
+    getFilteredMembers,
+    getMemberStats
   } = useMembers();
-  
+
+  // State for filtering members (current/alumni/all)
   const [filter, setFilter] = useState<'current' | 'alumni' | 'all'>('current');
+  
+  // State for expanded member details
   const [expandedMember, setExpandedMember] = useState<string | null>(null);
 
+  // Get member statistics for filter buttons
   const stats = getMemberStats();
 
+  /**
+   * Determines badge color based on member role
+   * Provides visual hierarchy for different positions
+   */
   const getRoleColor = (role: string) => {
-    if (role.toLowerCase().includes('president')) {
+    const lowerRole = role.toLowerCase();
+    
+    // Primary leadership positions
+    if (lowerRole.includes('president') || lowerRole.includes('chair')) {
       return 'bg-ieee-primary text-white';
     }
-    if (role.toLowerCase().includes('vice') || role.toLowerCase().includes('advisor')) {
+    
+    // Secondary leadership and advisors
+    if (lowerRole.includes('vice') || lowerRole.includes('advisor')) {
       return 'bg-ieee-secondary text-white';
     }
-    if (role.toLowerCase().includes('treasurer') || role.toLowerCase().includes('secretary')) {
+    
+    // Officers (treasurer, secretary, etc.)
+    if (lowerRole.includes('treasurer') || lowerRole.includes('secretary')) {
       return 'bg-ieee-accent text-ieee-dark';
     }
+    
+    // Default for other roles
     return 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
   };
 

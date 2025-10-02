@@ -1,12 +1,29 @@
+/**
+ * Navigation Bar Component
+ * 
+ * Provides site navigation with responsive design, theme toggle, and mobile menu.
+ * Features:
+ * - Sticky header with IEEE branding
+ * - Responsive mobile menu
+ * - Dark/light theme toggle
+ * - Active link highlighting
+ */
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 
 const Navbar: React.FC = () => {
+  // State for mobile menu toggle
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  // Theme context for dark/light mode
   const { isDark, toggleTheme } = useTheme();
+  
+  // Current location for active link highlighting
   const location = useLocation();
 
+  // Navigation menu items configuration
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/projects', label: 'Projects' },
@@ -15,6 +32,7 @@ const Navbar: React.FC = () => {
     { path: '/contact', label: 'Contact' },
   ];
 
+  // Helper function to check if current route is active
   const isActive = (path: string) => location.pathname === path;
 
   return (

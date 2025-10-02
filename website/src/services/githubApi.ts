@@ -1,3 +1,16 @@
+/**
+ * GitHub API Service
+ * 
+ * Handles all GitHub API interactions for fetching repository data.
+ * Features:
+ * - Organization repository fetching
+ * - Language detection
+ * - Error handling and rate limiting awareness
+ * - Data transformation for UI consumption
+ * - Academic year calculation for project organization
+ */
+
+// GitHub API response interfaces
 export interface GitHubRepository {
   id: number;
   name: string;

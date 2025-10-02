@@ -1,15 +1,35 @@
+/**
+ * Projects Page Component
+ * 
+ * Displays IEEE chapter projects dynamically fetched from GitHub organization.
+ * Features:
+ * - Dynamic GitHub API integration
+ * - Project filtering by status (all/active/completed/archived)
+ * - Responsive grid layout
+ * - Loading states and error handling
+ * - GitHub statistics (stars, forks, last updated)
+ */
+
 import React, { useState } from 'react';
 import { Project } from '../types';
 import { useGitHubProjects } from '../hooks/useGitHubProjects';
 
 const Projects: React.FC = () => {
+  // Fetch projects from GitHub API with loading/error states
   const { projects, loading, error } = useGitHubProjects();
+  
+  // State for project filtering
   const [filter, setFilter] = useState<'all' | 'active' | 'completed' | 'archived'>('all');
 
+  // Filter projects based on selected status
   const filteredProjects = projects.filter(project => 
     filter === 'all' || project.status === filter
   );
 
+  /**
+   * Returns appropriate CSS classes for project status badges
+   * Provides visual indicators for project lifecycle stages
+   */
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'active':

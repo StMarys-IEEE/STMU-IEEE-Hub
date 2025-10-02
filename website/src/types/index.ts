@@ -1,3 +1,12 @@
+/**
+ * TypeScript Type Definitions
+ * 
+ * Central type definitions for the IEEE St. Mary's University website.
+ * Defines interfaces for members, projects, and data structures used
+ * throughout the application.
+ */
+
+// Member interface for current officers and alumni
 export interface Member {
   id: string;
   name: string;
