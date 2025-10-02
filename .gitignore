@@ -1,0 +1,106 @@
+# IEEE St. Mary's University Hub - Git Ignore File
+
+# ===== NODE.JS & NPM =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+package-lock.json
+
+# ===== BUILD OUTPUTS =====
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# ===== ENVIRONMENT & CONFIG =====
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# ===== LOGS =====
+logs/
+*.log
+
+# ===== EDITOR & IDE =====
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OPERATING SYSTEM =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== TEMPORARY FILES =====
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# ===== SENSITIVE DATA =====
+# API Keys and secrets (if any config files are added later)
+config/secrets.*
+*.key
+*.pem
+*.p12
+*.p8
+*.crt
+*.cert
+*.cer
+
+# ===== DEVELOPMENT ARTIFACTS =====
+coverage/
+.nyc_output/
+.eslintcache
+*.tgz
+*.tar.gz
+
+# ===== DEPLOYMENT =====
+# GitHub Pages build artifacts (if using gh-pages branch)
+.gh-pages/
+
+# ===== PROJECT SPECIFIC =====
+# Temporary logo extraction directories
+logo_variations/
+
+# ===== KEEP THESE FILES =====
+# Make sure important files are NOT ignored
+!website/public/images/
+!website/src/
+!*.md
+!*.json
+!*.ts
+!*.tsx
+!*.js
+!*.jsx
+!*.css
+!*.html
