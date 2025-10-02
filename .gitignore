@@ -92,6 +92,9 @@ coverage/
 # Temporary logo extraction directories
 logo_variations/
 
+# Arduino workshop files (long filenames cause deployment issues)
+Workshops/
+
 # ===== KEEP THESE FILES =====
 # Make sure important files are NOT ignored
 !website/public/images/
