@@ -2,37 +2,52 @@
   {
     "id": "1",
     "name": "Ethan Rodriguez",
-    "role": "President",
+    "role": "Chair",
     "email": "ethan.rodriguez@stmarys.edu",
     "github": "https://github.com/ethanrodriguez",
     "instagram": "https://www.instagram.com/ethanrodriguez_ieee/",
     "avatar": "/images/members/ethan-rodriguez.jpg",
-    "contributions": ["Leadership", "Event Organization", "Guitar Performance"],
-    "bio": "Leading the IEEE chapter with passion for technology and music. Computer Science major focused on software development and team building.",
+    "contributions": ["Leadership", "Event Organization", "Physics & Engineering Tutoring"],
+    "bio": "Leading the IEEE chapter with passion for technology and music. Physics and Engineering tutor who plays in a band that performs on campus.",
     "funFacts": [
-      "🎸 Plays electric guitar and has performed at campus events",
-      "☕ Can't start coding without a cup of coffee",
-      "🎮 Built his first video game at age 12",
-      "🌮 Favorite study snack: tacos from the campus food truck"
+      "📚 Physics and Engineering tutor",
+      "🎸 Plays in a band (you may have seen them on campus)",
+      "🕷️ Huge Spider-Man and Marvel fan",
+      "🎭 Theatre enthusiast",
+      "🎮 Marvel Rivals player"
     ],
+    "talkAbout": [
+      "🎵 Anything with music",
+      "🦸‍♂️ Superheroes (especially Spider-Man)",
+      "🎭 Theatre",
+      "🎮 Marvel Rivals"
+    ],
+    "graduationYear": "May 2026",
     "type": "current"
   },
   {
     "id": "2",
     "name": "Donovan Acosta",
-    "role": "Risk Management Officer",
+    "role": "Risk Management",
     "email": "donovan.acosta@stmarys.edu",
     "github": "https://github.com/donovanacosta",
     "instagram": "https://www.instagram.com/donovanacosta_ieee/",
     "avatar": "/images/members/donovan-acosta.jpg",
     "contributions": ["Risk Assessment", "Safety Protocols", "Event Planning"],
-    "bio": "Ensuring the safety and security of all IEEE activities and events. Engineering student with expertise in risk management and project coordination.",
+    "bio": "Ensuring the safety and security of all IEEE activities and events. Has a passion for retro electronics and is known for his love of Dr Pepper.",
     "funFacts": [
-      "🛡️ Always has a backup plan for everything",
-      "📚 Reads 3 engineering books per month",
-      "🏃‍♂️ Runs 5 miles every morning before class",
-      "🎯 Can solve a Rubik's cube in under 2 minutes"
+      "🕹️ Into retro electronics",
+      "🥤 Big fan of Dr Pepper",
+      "🐸 Likes frogs and cats",
+      "🛡️ Always has a backup plan for everything"
     ],
+    "talkAbout": [
+      "🎮 Video games",
+      "🛹 Skateboarding", 
+      "🚗 Cars",
+      "🏯 Anime"
+    ],
+    "graduationYear": "May 2026",
     "type": "current"
   },
   {
@@ -44,13 +59,20 @@
     "instagram": "https://www.instagram.com/marvinmasabo_ieee/",
     "avatar": "/images/members/marvin-masabo-nkaka.jpg",
     "contributions": ["Documentation", "Meeting Records", "Communication"],
-    "bio": "Keeping detailed records of all IEEE activities and maintaining clear communication channels. Computer Science student with strong organizational skills.",
+    "bio": "Keeping detailed records of all IEEE activities and maintaining clear communication channels. From Kigali, Rwanda, and serves as an RA in Marian Hall.",
     "funFacts": [
-      "📝 Takes notes in 3 different languages",
-      "🌍 Speaks 4 languages fluently",
-      "🎨 Creates digital art in his spare time",
-      "☕ Drinks more coffee than the entire engineering department"
+      "🇷🇼 From Kigali, Rwanda",
+      "🏠 RA in Marian Hall",
+      "🗣️ Speaks a decent amount of three languages",
+      "📝 Takes detailed notes in multiple languages"
     ],
+    "talkAbout": [
+      "⚽ Soccer",
+      "🏎️ Formula 1",
+      "🎵 Music",
+      "🏃‍♂️ Calm runs"
+    ],
+    "graduationYear": "May 2027",
     "type": "current"
   },
   {
@@ -62,31 +84,44 @@
     "instagram": "https://www.instagram.com/nickgalus_ieee/",
     "avatar": "/images/members/nick-galus.jpg",
     "contributions": ["Financial Management", "Budget Planning", "Fundraising"],
-    "bio": "Managing the financial aspects of the IEEE chapter with precision and care. Engineering student with expertise in financial planning and resource allocation.",
+    "bio": "Managing the financial aspects of the IEEE chapter with precision and care. RA in Leies Hall and member of the Honors Program at STMU.",
     "funFacts": [
+      "🏠 RA in Leies Hall",
+      "🎓 Member of the Honors Program at STMU",
       "💰 Can calculate complex budgets in his head",
-      "🎯 Never misses a deadline (seriously, never)",
-      "🏆 Won the campus math competition 3 years in a row",
-      "🍕 Organizes the best pizza parties for IEEE events"
+      "🎯 Never misses a deadline (seriously, never)"
     ],
+    "talkAbout": [
+      "🔧 Anything with an engine",
+      "🏈 Football",
+      "💡 Life advice"
+    ],
+    "graduationYear": "May 2028",
     "type": "current"
   },
   {
     "id": "5",
     "name": "Veltman Jr Okey-Ejiowhor",
-    "role": "Robotics Co-Chair",
+    "role": "Vice Chair",
     "email": "veltman.okey@stmarys.edu",
     "github": "https://github.com/veltmanjr",
     "instagram": "https://www.instagram.com/veltmanjr_ieee/",
     "avatar": "/images/members/veltman-okey-ejiowhor.jpg",
     "contributions": ["Robotics Projects", "Technical Leadership", "Workshop Development"],
-    "bio": "Leading robotics initiatives and technical projects for the IEEE chapter. Engineering student passionate about automation and robotics technology.",
+    "bio": "Leading robotics initiatives and technical projects for the IEEE chapter. Member of the Honors Program at STMU with a passion for soccer and technology.",
     "funFacts": [
+      "🎓 Member of the Honors Program at STMU",
+      "⚽ Loves Manchester United & Real Madrid (best teams in the world, according to him)",
       "🤖 Built his first robot at age 10",
-      "⚡ Can fix any electronic device",
-      "🎮 Dreams of creating the next generation of gaming robots",
-      "🌙 Codes until 3 AM when working on exciting projects"
+      "⚡ Can fix any electronic device"
     ],
+    "talkAbout": [
+      "⚽ Soccer",
+      "🎮 Video games",
+      "🚗 Cars",
+      "🤖 Machine Learning / A.I."
+    ],
+    "graduationYear": "May 2028",
     "type": "current"
   },
   {

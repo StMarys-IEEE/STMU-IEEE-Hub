@@ -10,6 +10,7 @@ export interface Member {
   contributions: string[];
   bio?: string;
   funFacts?: string[];
+  talkAbout?: string[];
   type: 'current' | 'alumni';
   graduationYear?: string;
   currentPosition?: string;

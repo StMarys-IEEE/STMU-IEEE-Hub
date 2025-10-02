@@ -124,13 +124,18 @@ const Members: React.FC = () => {
                   <h3 className="text-lg font-semibold text-ieee-dark dark:text-white truncate">
                     {member.getName()}
                   </h3>
-                  <div className="flex items-center space-x-2">
+                  <div className="flex items-start gap-3 flex-wrap">
                     <span className={`px-2 py-1 rounded-full text-xs font-medium ${getRoleColor(member.getRole())}`}>
                       {member.getRole()}
                     </span>
-                    {member.isAlumni() && member.getAlumniInfo()?.graduationYear && (
-                      <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs rounded-md">
-                        Class of {member.getAlumniInfo()?.graduationYear}
+                    {member.toJSON().graduationYear && (
+                      <span className={`px-2 py-1 text-xs rounded-md ${
+                        member.isAlumni() 
+                          ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300' 
+                          : 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300'
+                      }`}>
+                        🎓 {member.toJSON().graduationYear}
+                        {member.isAlumni() && ' (Alumni)'}
                       </span>
                     )}
                   </div>
@@ -181,6 +186,23 @@ const Members: React.FC = () => {
                           <p key={index} className="text-sm text-gray-600 dark:text-gray-300">
                             {fact}
                           </p>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Talk About Topics */}
+                  {member.getTalkAbout().length > 0 && (
+                    <div>
+                      <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">What you can talk to them about</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {member.getTalkAbout().map((topic, index) => (
+                          <span
+                            key={index}
+                            className="px-2 py-1 bg-green-100 dark:bg-green-700 text-green-700 dark:text-green-300 text-xs rounded-md"
+                          >
+                            {topic}
+                          </span>
                         ))}
                       </div>
                     </div>

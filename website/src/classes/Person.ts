@@ -7,6 +7,7 @@ export class Person {
   private avatar?: string;
   private bio?: string;
   private funFacts: string[];
+  private talkAbout: string[];
   private contributions: string[];
   
   // Contact information
@@ -35,6 +36,7 @@ export class Person {
     this.role = role;
     this.type = type;
     this.funFacts = [];
+    this.talkAbout = [];
     this.contributions = [];
     this.contactInfo = {};
   }
@@ -47,6 +49,7 @@ export class Person {
   getAvatar(): string | undefined { return this.avatar; }
   getBio(): string | undefined { return this.bio; }
   getFunFacts(): string[] { return this.funFacts; }
+  getTalkAbout(): string[] { return this.talkAbout; }
   getContributions(): string[] { return this.contributions; }
   getContactInfo() { return this.contactInfo; }
   getAlumniInfo() { return this.alumniInfo; }
@@ -64,6 +67,11 @@ export class Person {
 
   addFunFact(fact: string): Person {
     this.funFacts.push(fact);
+    return this;
+  }
+
+  addTalkAbout(topic: string): Person {
+    this.talkAbout.push(topic);
     return this;
   }
 
@@ -134,7 +142,34 @@ export class Person {
   }
 
   isAlumni(): boolean {
-    return this.type === 'alumni';
+    // Check if manually set as alumni
+    if (this.type === 'alumni') return true;
+    
+    // Auto-detect alumni status based on graduation date
+    if (this.alumniInfo?.graduationYear) {
+      const currentDate = new Date();
+      const graduationDate = this.parseGraduationDate(this.alumniInfo.graduationYear);
+      return currentDate > graduationDate;
+    }
+    
+    return false;
+  }
+
+  // Helper method to parse graduation date strings like "May 2026"
+  private parseGraduationDate(graduationYear: string): Date {
+    // Handle formats like "May 2026", "2026", "Spring 2026", etc.
+    const year = parseInt(graduationYear.match(/\d{4}/)?.[0] || '0');
+    
+    if (graduationYear.toLowerCase().includes('may') || 
+        graduationYear.toLowerCase().includes('spring')) {
+      return new Date(year, 4, 31); // May 31st
+    } else if (graduationYear.toLowerCase().includes('december') || 
+               graduationYear.toLowerCase().includes('fall')) {
+      return new Date(year, 11, 31); // December 31st
+    } else {
+      // Default to end of year if format is unclear
+      return new Date(year, 11, 31);
+    }
   }
 
   hasAlumniInfo(): boolean {
@@ -151,6 +186,7 @@ export class Person {
       avatar: this.avatar,
       bio: this.bio,
       funFacts: this.funFacts,
+      talkAbout: this.talkAbout,
       contributions: this.contributions,
       email: this.contactInfo.email,
       github: this.contactInfo.github,
@@ -169,6 +205,7 @@ export class Person {
     if (data.avatar) person.setAvatar(data.avatar);
     if (data.bio) person.setBio(data.bio);
     if (data.funFacts) data.funFacts.forEach((fact: string) => person.addFunFact(fact));
+    if (data.talkAbout) data.talkAbout.forEach((topic: string) => person.addTalkAbout(topic));
     if (data.contributions) data.contributions.forEach((contrib: string) => person.addContribution(contrib));
     
     if (data.email) person.setEmail(data.email);

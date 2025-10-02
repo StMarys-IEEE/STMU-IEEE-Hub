@@ -15,27 +15,23 @@ export class MemberManager {
       const currentMembersData = await import('../data/members.json');
       this.currentMembers = currentMembersData.default.map((member: any) => Person.fromJSON(member));
       
-      // Load alumni members
-      try {
-        const alumniData = await import('../data/alumni.json');
-        this.alumniMembers = alumniData.default.map((member: any) => Person.fromJSON(member));
-      } catch (error) {
-        // No alumni file exists yet
-        this.alumniMembers = [];
-      }
+      // No alumni members currently - will be populated automatically when graduation dates pass
+      this.alumniMembers = [];
     } catch (error) {
       console.error('Error loading members:', error);
     }
   }
 
-  // Get all current members
+  // Get all current members (automatically filters out alumni based on graduation date)
   getCurrentMembers(): Person[] {
-    return this.currentMembers;
+    const allMembers = [...this.currentMembers, ...this.alumniMembers];
+    return allMembers.filter(member => !member.isAlumni());
   }
 
-  // Get all alumni members
+  // Get all alumni members (automatically includes those who have graduated)
   getAlumniMembers(): Person[] {
-    return this.alumniMembers;
+    const allMembers = [...this.currentMembers, ...this.alumniMembers];
+    return allMembers.filter(member => member.isAlumni());
   }
 
   // Get all members
