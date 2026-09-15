@@ -49,13 +49,16 @@ const ThemeButton: React.FC<{ className?: string }> = ({ className = '' }) => {
   );
 };
 
+/* Not sticky. A pinned bar means the page slides underneath a fixed layer,
+   which is one of the stronger motion-sickness triggers on a scrolling page.
+   Restore `sticky top-0 z-50` on the <nav> if you want it back. */
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white dark:bg-[#14161A] border-b border-gray-200 dark:border-gray-800 sticky top-0 z-50">
+    <nav className="bg-white dark:bg-[#14161A] border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center gap-2">

@@ -30,8 +30,9 @@ const Home: React.FC = () => {
           </h1>
 
           <p className="text-[15px] md:text-base text-gray-400 leading-relaxed mb-8 max-w-xl">
-            Hands-on workshops in Arduino, robotics, and Git. Everything we build is
-            public on GitHub. Open to every major, no experience needed.
+            Arduino, robotics, machine learning, and the tools engineers actually use.
+            Everything we build is public on GitHub. Open to every major, no
+            experience needed.
           </p>
 
           {nextEvent ? (

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Events from './pages/Events';
@@ -19,6 +20,7 @@ function App() {
         "/STMU-IEEE-Hub/"; in `npm run dev` it is "/".
       */}
       <Router basename={import.meta.env.BASE_URL}>
+        <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-grow">
