@@ -29,6 +29,17 @@
         }
       }(window.location))
     </script>
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('ieee-theme');
+          var dark = stored === 'dark' || (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) document.documentElement.classList.add('dark');
+          } catch (e) {}
+        })();
+    </script>
+    
     <!-- End Single Page Apps for GitHub Pages -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
