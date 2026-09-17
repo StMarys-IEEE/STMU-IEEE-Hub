@@ -1,65 +1,38 @@
 [
   {
     "id": "1",
-    "name": "Ethan Rodriguez",
-    "role": "Chair",
-    "email": "ethan.rodriguez@stmarys.edu",
-    "github": "https://github.com/ethanrodriguez",
-    "instagram": "https://www.instagram.com/ethanrodriguez_ieee/",
-    "avatar": "/images/members/ethan-rodriguez.jpg",
-    "contributions": ["Leadership", "Event Organization", "Physics & Engineering Tutoring"],
-    "bio": "Leading the IEEE chapter with passion for technology and music. Physics and Engineering tutor who plays in a band that performs on campus.",
+    "name": "Nick Galus",
+    "role": "President",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
+    "contributions": ["Chapter Leadership", "Event Organization"],
+    "bio": "RA in Leies Hall and a member of the Honors Program at St. Mary's.",
     "funFacts": [
-      "📚 Physics and Engineering tutor",
-      "🎸 Plays in a band (you may have seen them on campus)",
-      "🕷️ Huge Spider-Man and Marvel fan",
-      "🎭 Theatre enthusiast",
-      "🎮 Marvel Rivals player"
+      "🏠 RA in Leies Hall",
+      "🎓 Member of the Honors Program at STMU",
+      "💰 Can calculate complex budgets in his head",
+      "🎯 Never misses a deadline (seriously, never)"
     ],
     "talkAbout": [
-      "🎵 Anything with music",
-      "🦸‍♂️ Superheroes (especially Spider-Man)",
-      "🎭 Theatre",
-      "🎮 Marvel Rivals"
+      "🔧 Anything with an engine",
+      "🏈 Football",
+      "💡 Life advice"
     ],
-    "graduationYear": "May 2026",
+    "graduationYear": "May 2028",
     "type": "current"
   },
   {
     "id": "2",
-    "name": "Donovan Acosta",
-    "role": "Risk Management",
-    "email": "donovan.acosta@stmarys.edu",
-    "github": "https://github.com/donovanacosta",
-    "instagram": "https://www.instagram.com/donovanacosta_ieee/",
-    "avatar": "/images/members/donovan-acosta.jpg",
-    "contributions": ["Risk Assessment", "Safety Protocols", "Event Planning"],
-    "bio": "Ensuring the safety and security of all IEEE activities and events. Has a passion for retro electronics and is known for his love of Dr Pepper.",
-    "funFacts": [
-      "🕹️ Into retro electronics",
-      "🥤 Big fan of Dr Pepper",
-      "🐸 Likes frogs and cats",
-      "🛡️ Always has a backup plan for everything"
-    ],
-    "talkAbout": [
-      "🎮 Video games",
-      "🛹 Skateboarding", 
-      "🚗 Cars",
-      "🏯 Anime"
-    ],
-    "graduationYear": "May 2026",
-    "type": "current"
-  },
-  {
-    "id": "3",
     "name": "Marvin Masabo Nkaka",
-    "role": "Secretary",
-    "email": "marvin.nkaka@stmarys.edu",
-    "github": "https://github.com/marvinmasabo",
-    "instagram": "https://www.instagram.com/marvinmasabo_ieee/",
-    "avatar": "/images/members/marvin-masabo-nkaka.jpg",
+    "role": "Vice President",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
     "contributions": ["Documentation", "Meeting Records", "Communication"],
-    "bio": "Keeping detailed records of all IEEE activities and maintaining clear communication channels. From Kigali, Rwanda, and serves as an RA in Marian Hall.",
+    "bio": "From Kigali, Rwanda, and serves as an RA in Marian Hall.",
     "funFacts": [
       "🇷🇼 From Kigali, Rwanda",
       "🏠 RA in Marian Hall",
@@ -76,39 +49,43 @@
     "type": "current"
   },
   {
+    "id": "3",
+    "name": "Ricardo Paez",
+    "role": "Secretary",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
+    "contributions": ["Documentation", "Chapter Website"],
+    "bio": "",
+    "funFacts": [],
+    "talkAbout": [],
+    "type": "current"
+  },
+  {
     "id": "4",
-    "name": "Nick Galus",
+    "name": "Sophia Zamora",
     "role": "Treasurer",
-    "email": "nick.galus@stmarys.edu",
-    "github": "https://github.com/nickgalus",
-    "instagram": "https://www.instagram.com/nickgalus_ieee/",
-    "avatar": "/images/members/nick-galus.jpg",
-    "contributions": ["Financial Management", "Budget Planning", "Fundraising"],
-    "bio": "Managing the financial aspects of the IEEE chapter with precision and care. RA in Leies Hall and member of the Honors Program at STMU.",
-    "funFacts": [
-      "🏠 RA in Leies Hall",
-      "🎓 Member of the Honors Program at STMU",
-      "💰 Can calculate complex budgets in his head",
-      "🎯 Never misses a deadline (seriously, never)"
-    ],
-    "talkAbout": [
-      "🔧 Anything with an engine",
-      "🏈 Football",
-      "💡 Life advice"
-    ],
-    "graduationYear": "May 2028",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
+    "contributions": ["Financial Management", "Budget Planning"],
+    "bio": "",
+    "funFacts": [],
+    "talkAbout": [],
     "type": "current"
   },
   {
     "id": "5",
     "name": "Veltman Jr Okey-Ejiowhor",
-    "role": "Vice Chair",
-    "email": "veltman.okey@stmarys.edu",
-    "github": "https://github.com/veltmanjr",
-    "instagram": "https://www.instagram.com/veltmanjr_ieee/",
-    "avatar": "/images/members/veltman-okey-ejiowhor.jpg",
-    "contributions": ["Robotics Projects", "Technical Leadership", "Workshop Development"],
-    "bio": "Leading robotics initiatives and technical projects for the IEEE chapter. Member of the Honors Program at STMU with a passion for soccer and technology.",
+    "role": "Risk Management Officer",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
+    "contributions": ["Risk Assessment", "Safety Protocols", "Robotics Projects"],
+    "bio": "Member of the Honors Program at St. Mary's, working on robotics and technical projects for the chapter.",
     "funFacts": [
       "🎓 Member of the Honors Program at STMU",
       "⚽ Loves Manchester United & Real Madrid (best teams in the world, according to him)",
@@ -128,20 +105,65 @@
     "id": "6",
     "name": "Wenbin Luo",
     "role": "Campus Advisor",
-    "email": "wenbin.luo@stmarys.edu",
-    "github": "https://github.com/wenbinluo",
-    "instagram": "https://www.instagram.com/wenbinluo_ieee/",
-    "avatar": "/images/members/wenbin-luo.jpg",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
     "contributions": ["Faculty Guidance", "Academic Support", "Industry Connections"],
-    "bio": "Providing academic guidance and industry connections for IEEE members. Faculty member with extensive experience in engineering education and research.",
-    "funFacts": [
-      "🎓 Has published over 50 research papers",
-      "🌱 Grows his own vegetables in his office",
-      "📚 Has a personal library of 1000+ engineering books",
-      "☕ Makes the best coffee in the engineering building"
-    ],
+    "bio": "Faculty advisor to the IEEE Student Chapter at St. Mary's University.",
+    "funFacts": [],
+    "talkAbout": [],
     "type": "current"
+  },
+  {
+    "id": "7",
+    "name": "Ethan Rodriguez",
+    "role": "Chair",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
+    "contributions": ["Leadership", "Event Organization", "Physics & Engineering Tutoring"],
+    "bio": "Led the chapter through the 2025-26 year. Physics and Engineering tutor who plays in a band that performs on campus.",
+    "funFacts": [
+      "📚 Physics and Engineering tutor",
+      "🎸 Plays in a band (you may have seen them on campus)",
+      "🕷️ Huge Spider-Man and Marvel fan",
+      "🎭 Theatre enthusiast",
+      "🎮 Marvel Rivals player"
+    ],
+    "talkAbout": [
+      "🎵 Anything with music",
+      "🦸‍♂️ Superheroes (especially Spider-Man)",
+      "🎭 Theatre",
+      "🎮 Marvel Rivals"
+    ],
+    "graduationYear": "May 2026",
+    "type": "alumni"
+  },
+  {
+    "id": "8",
+    "name": "Donovan Acosta",
+    "role": "Risk Management",
+    "email": "",
+    "github": "",
+    "instagram": "",
+    "linkedin": "",
+    "contributions": ["Risk Assessment", "Safety Protocols", "Event Planning"],
+    "bio": "Handled risk management and event safety through the 2025-26 year.",
+    "funFacts": [
+      "🕹️ Into retro electronics",
+      "🥤 Big fan of Dr Pepper",
+      "🐸 Likes frogs and cats",
+      "🛡️ Always has a backup plan for everything"
+    ],
+    "talkAbout": [
+      "🎮 Video games",
+      "🛹 Skateboarding",
+      "🚗 Cars",
+      "🏯 Anime"
+    ],
+    "graduationYear": "May 2026",
+    "type": "alumni"
   }
 ]
-
-

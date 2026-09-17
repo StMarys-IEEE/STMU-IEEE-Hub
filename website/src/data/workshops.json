@@ -1,0 +1,37 @@
+[
+  {
+    "id": "robotic-arm",
+    "title": "Robotic Arm Workshop",
+    "date": "",
+    "blurb": "Serial-controlled servo robotics. Drive the arm by hand with the keyboard, then write your own routines and run them on the hardware.",
+    "hardware": ["Arduino Nano", "Servo motors", "USB cable"],
+    "software": ["Arduino IDE", "Python 3", "pyserial", "keyboard"],
+    "paths": [
+      { "label": "Arduino sketch", "repoPath": "Robotic%20Arm/servo_test" },
+      { "label": "Controller and API", "repoPath": "Robotic%20Arm" },
+      { "label": "Example programs", "repoPath": "Robotic%20Arm/demos" }
+    ],
+    "quickStart": "cd \"Robotic Arm\"\npip install pyserial keyboard\npython teleop_keyboard.py",
+    "quickStartNote": "Enter your COM number when prompted (3 for COM3). WASD and arrow keys drive the arm; press t to run the latest run_program.py.",
+    "attribution": null
+  },
+  {
+    "id": "arduino-9-30-2025",
+    "title": "Arduino Workshop",
+    "date": "2025-09-30",
+    "blurb": "Two beginner projects. An LED starter sketch with step-by-step TODOs driven over the Serial Monitor, plus a buzzer build you can extend with buttons and other outputs.",
+    "hardware": ["Arduino board", "LED", "Buzzer", "Breadboard and jumper wires"],
+    "software": ["Arduino IDE"],
+    "paths": [
+      { "label": "LED starter project", "repoPath": "9-30-2025%20Arduino%20Workshop/starter" },
+      { "label": "Buzzer project", "repoPath": "9-30-2025%20Arduino%20Workshop/buzzer" }
+    ],
+    "quickStart": "",
+    "quickStartNote": "",
+    "attribution": {
+      "source": "HiBit buzzer repository",
+      "license": "MIT",
+      "holder": "© 2022 HiBit"
+    }
+  }
+]

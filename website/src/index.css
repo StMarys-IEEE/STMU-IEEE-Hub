@@ -31,3 +31,11 @@
 }
 
 
+/* Never smooth-scroll. Animating the whole page past the viewport is a direct motion-sickness trigger, and some libraries set this globally. */ 
+html { scroll-behavior: auto; }
+
+/* Respect the OS-level reduced-motion setting. On Windows this is Settings > Accessibility > Visual effects > Animation effects; on macOS, Accessibility > Display > Reduce motion. When it is on, kill transitions and animations site-wide rather than trying to tame them one by one. */ 
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+
+/* Hairline borders land on half-pixels at fractional display scaling (125% and 150% are the Windows defaults), which makes them shimmer while the page scrolls. Nudging them to a slightly softer color reduces the strobe without changing the layout. If the shimmer is what bothers you, this is the rule to tune. */ 
+@media (min-resolution: 1.25dppx) { .border-gray-200 { border-color: rgb(235 235 232); } .dark .dark:border-gray-700 { border-color: rgb(48 50 54); } }

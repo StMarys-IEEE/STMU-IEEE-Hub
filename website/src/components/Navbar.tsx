@@ -1,136 +1,120 @@
-/**
- * Navigation Bar Component
- * 
- * Provides site navigation with responsive design, theme toggle, and mobile menu.
- * Features:
- * - Sticky header with IEEE branding
- * - Responsive mobile menu
- * - Dark/light theme toggle
- * - Active link highlighting
- */
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 
+const navItems = [
+  { path: '/', label: 'Home' },
+  { path: '/events', label: 'Events' },
+  { path: '/workshops', label: 'Workshops' },
+  { path: '/projects', label: 'Projects' },
+  { path: '/members', label: 'People' },
+  { path: '/contact', label: 'Join' },
+];
+
+const ThemeButton: React.FC<{ className?: string }> = ({ className = '' }) => {
+  const { theme, cycleTheme } = useTheme();
+
+  const label =
+    theme === 'system'
+      ? 'Theme: follow system'
+      : theme === 'light'
+      ? 'Theme: light'
+      : 'Theme: dark';
+
+  return (
+    <button
+      onClick={cycleTheme}
+      className={`p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${className}`}
+      aria-label={label}
+      title={label}
+    >
+      {theme === 'system' && (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+          <rect x="2" y="4" width="20" height="13" rx="2" />
+          <path strokeLinecap="round" d="M8 21h8M12 17v4" />
+        </svg>
+      )}
+      {theme === 'light' && (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4" />
+          <path strokeLinecap="round" d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </svg>
+      )}
+      {theme === 'dark' && (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z" />
+        </svg>
+      )}
+    </button>
+  );
+};
+
+/* Not sticky. A pinned bar means the page slides underneath a fixed layer,
+   which is one of the stronger motion-sickness triggers on a scrolling page.
+   Restore `sticky top-0 z-50` on the <nav> if you want it back. */
 const Navbar: React.FC = () => {
-  // State for mobile menu toggle
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  // Theme context for dark/light mode
-  const { isDark, toggleTheme } = useTheme();
-  
-  // Current location for active link highlighting
   const location = useLocation();
-
-  // Navigation menu items configuration
-  const navItems = [
-    { path: '/', label: 'Home' },
-    { path: '/projects', label: 'Projects' },
-    { path: '/members', label: 'Members' },
-    { path: '/about', label: 'About' },
-    { path: '/contact', label: 'Contact' },
-  ];
-
-  // Helper function to check if current route is active
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-white dark:bg-ieee-dark shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-white dark:bg-[#14161A] border-b border-gray-200 dark:border-gray-800">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-ieee-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">IEEE</span>
-            </div>
-            <span className="text-xl font-bold text-ieee-dark dark:text-white">
-              St. Mary's Hub
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-[15px] font-medium text-ieee-dark dark:text-white">
+              IEEE St. Mary's
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`nav-link font-medium ${
+                className={`text-[14px] transition-colors ${
                   isActive(item.path)
                     ? 'text-ieee-primary dark:text-ieee-secondary'
-                    : ''
+                    : 'text-gray-600 dark:text-gray-400 hover:text-ieee-dark dark:hover:text-white'
                 }`}
               >
                 {item.label}
               </Link>
             ))}
-            
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-              aria-label="Toggle theme"
-            >
-              {isDark ? (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-                </svg>
-              ) : (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                </svg>
-              )}
-            </button>
+            <ThemeButton />
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700"
-              aria-label="Toggle theme"
-            >
-              {isDark ? (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-                </svg>
-              ) : (
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                </svg>
-              )}
-            </button>
+          <div className="md:hidden flex items-center gap-1">
+            <ThemeButton />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700"
+              className="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
               aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+                <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-ieee-dark border-t border-gray-200 dark:border-gray-700">
-              {navItems.map((item) => (
-                <Link
-                  key={item.path}
-                  to={item.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
-                    isActive(item.path)
-                      ? 'text-ieee-primary dark:text-ieee-secondary bg-gray-100 dark:bg-gray-700'
-                      : 'nav-link'
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </div>
+          <div className="md:hidden pb-3 border-t border-gray-200 dark:border-gray-800 pt-2">
+            {navItems.map((item) => (
+              <Link
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsMenuOpen(false)}
+                className={`block px-2 py-2.5 rounded-md text-[15px] ${
+                  isActive(item.path)
+                    ? 'text-ieee-primary dark:text-ieee-secondary'
+                    : 'text-gray-600 dark:text-gray-400'
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
         )}
       </div>
@@ -139,5 +123,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
-
