@@ -9,5 +9,16 @@
     "location": "BSIC 204",
     "description": "Meet the officers, hear what the chapter is working on this semester, and find out how to join.",
     "url": null
+  },
+  {
+    "id": "ai-ml-workshop-2026",
+    "title": "Can AI Predict the Winner? Intro to Machine Learning",
+    "type": "workshop",
+    "date": "2026-10-15",
+    "startTime": "17:00",
+    "endTime": "18:00",
+    "location": "BSIC 204",
+    "description": "Learn how models are trained to predict outcomes, then train your own on NBA, F1, soccer, and Avengers datasets and test how accurate it is. Led by Veltman and Marvin. No AI or coding experience required. Free snacks.",
+    "url": null
   }
 ]
