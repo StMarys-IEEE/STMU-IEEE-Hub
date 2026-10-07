@@ -11,6 +11,17 @@
     "url": null
   },
   {
+    "id": "usaa-pitch-prep-2026",
+    "title": "Elevator Pitch Prep with USAA",
+    "type": "workshop",
+    "date": "2026-10-08",
+    "startTime": "17:30",
+    "endTime": "19:00",
+    "location": "Blank Sheppard Innovation Center, 2nd floor common area",
+    "description": "Tips and tricks from USAA industry experts on pitching yourself to recruiters. Co-hosted with SHPE and open to the whole STMU community. Pizza and soft drinks provided.",
+    "url": "https://app.joinhandshake.com/events/2035235/share_preview"
+  },
+  {
     "id": "ai-ml-workshop-2026",
     "title": "Can AI Predict the Winner? Intro to Machine Learning",
     "type": "workshop",
