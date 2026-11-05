@@ -25,11 +25,22 @@
     "id": "ai-ml-workshop-2026",
     "title": "Can AI Predict the Winner? Intro to Machine Learning",
     "type": "workshop",
-    "date": "2026-10-15",
+    "date": "2026-11-5",
     "startTime": "17:00",
     "endTime": "18:00",
     "location": "BSIC 204",
     "description": "Learn how models are trained to predict outcomes, then train your own on NBA, F1, soccer, and Avengers datasets and test how accurate it is. Led by Veltman and Marvin. No AI or coding experience required. Free snacks.",
+    "url": null
+  },
+  {
+    "id": "engineering-after-university-2026",
+    "title": "Engineering After University with Joshua Riojas",
+    "type": "meeting",
+    "date": "2026-11-13",
+    "startTime": "16:30",
+    "endTime": "18:00",
+    "location": "",
+    "description": "Joshua Riojas on what engineering work looks like after graduation.",
     "url": null
   }
 ]
